@@ -25,7 +25,7 @@ public class PickupCar extends Car {
 	 *********************************/
 	@Override
 	public String toString() {
-		return getCarID() + "\t∆§ø®≥µ\t" + "\t" + getCarName() + "\t" + getRentFee() + "\t\t" + getMaxManned() + "\t"
+		return getCarID() + "\t∆§ø®≥µ\t" + "\t" + getCarName() + "\t\t" + getRentFee() + "\t\t" + getMaxManned() + "\t"
 				+ getMaxCarry();
 	}
 

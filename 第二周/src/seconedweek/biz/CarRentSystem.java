@@ -29,7 +29,7 @@ public class CarRentSystem {
 	 * 系统初始化
 	 ********************/
 	private void init() {
-		if ((carinfo = getCars()) == null) {
+		if ((carinfo = getCars()) == null || carinfo.isEmpty()) {
 			System.out.println("********系统初始化失败或者为空!退出系统**********");
 			System.exit(0);
 		} else {
@@ -190,15 +190,7 @@ public class CarRentSystem {
 	 * 读取车辆信息，并以图的方式返回
 	 */
 	private Map<Integer, Car> getCars() {
-		Map<Integer, Car> carinfo = new TreeMap<>();
-		Car car;
-		int id = 1;
-		// 获取实例化所有的车辆
-		while ((car = CarFactory.getCar(id)) != null) {
-			carinfo.put(id, car);
-			id++;
-		}
-		return carinfo;
+		return CarFactory.getAllCar();
 	}
 
 	public Map<Integer, Car> getCarinfo() {
