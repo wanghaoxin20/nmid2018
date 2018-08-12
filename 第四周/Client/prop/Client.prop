@@ -1,0 +1,9 @@
+#info to connect server
+ServerHost=127.0.0.1
+ServerPort=8888
+
+#filepath
+SendFilePath=../data/files
+GetFilePath=../data/files_fromserver
+
+EncKey=0x1f2f3f

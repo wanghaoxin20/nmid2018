@@ -1,0 +1,14 @@
+#Server
+Port=8888
+
+#filepath
+ServerTxt=../Server.txt
+RecFilePath=../data
+
+#ThreadPoolSize Attribute
+corePoolSize=15
+maximumPoolSize=30
+keepAliveTime=12000
+
+
+DecKey=0x1f2f3f
