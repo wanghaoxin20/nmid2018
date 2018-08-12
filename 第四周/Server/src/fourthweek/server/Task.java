@@ -18,7 +18,7 @@ import java.text.SimpleDateFormat;
 
 public class Task implements Runnable {
 
-	private final Object writelock = new Object(); // 写入文件的锁
+	private final Object writelock = "lock"; // 写入文件的锁
 	
 	private static SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); // 日期格式
 
