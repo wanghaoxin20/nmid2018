@@ -227,8 +227,8 @@ public class Task implements Runnable {
 	 * 该次请求的信息 *
 	 */
 	private String MesInfo(long time, String mesType, String mesContent) {
-		return "时间:" + sf.format(time) + System.lineSeparator() + "消息来源:" + socket.getInetAddress()
-				+ System.lineSeparator() + "消息类型:" + mesType + System.lineSeparator() + "消息内容:" + mesContent
+		return "时间:" + sf.format(time) + System.lineSeparator() + "消息来源:" + socket.getInetAddress() + 
+				System.lineSeparator() + "客户端端口号:" + socket.getPort() + System.lineSeparator() + "消息类型:" + mesType + System.lineSeparator() + "消息内容:" + mesContent
 				+ System.lineSeparator();
 	}
 
