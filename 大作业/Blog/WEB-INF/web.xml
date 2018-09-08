@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" metadata-complete="true" version="3.1">
+  <!-- filter -->
+  <filter>
+  	<filter-name>Encode</filter-name>
+  	<filter-class>filter.Encode</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>Encode</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!--  -->
+  
+  <!-- servlet -->
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>servlet.Login</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Publish</servlet-name>
+    <servlet-class>servlet.Publish</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>DelBlog</servlet-name>
+    <servlet-class>servlet.DelBlog</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ShowBlog</servlet-name>
+    <servlet-class>servlet.ShowBlog</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>LoginOut</servlet-name>
+    <servlet-class>servlet.LoginOut</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>UpdateBlog</servlet-name>
+    <servlet-class>servlet.UpdateBlog</servlet-class>
+  </servlet>
+  <!--  -->
+  
+  <!-- servlet-mapping -->
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Publish</servlet-name>
+    <url-pattern>/Publish</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DelBlog</servlet-name>
+    <url-pattern>/DelBlog</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ShowBlog</servlet-name>
+    <url-pattern>/ShowBlog</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>LoginOut</servlet-name>
+    <url-pattern>/LoginOut</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateBlog</servlet-name>
+    <url-pattern>/UpdateBlog</url-pattern>
+  </servlet-mapping>
+  <!--  -->
+  
+  <!-- 默认页面 -->
+  <welcome-file-list>
+  	<welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
