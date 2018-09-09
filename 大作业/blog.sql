@@ -15,6 +15,10 @@ Date: 2018-09-09 12:25:27
 
 SET FOREIGN_KEY_CHECKS=0;
 
+CREATE DATABASE blog;
+
+USE blog;
+
 -- ----------------------------
 -- Table structure for blog_info
 -- ----------------------------
